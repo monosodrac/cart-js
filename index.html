@@ -1,131 +1,267 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Title | Home</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-nav container">
-        <ul class="header-list-container list-container">
-          <li class="nav-item">
-            <a href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="loja.html">Store</a>
-          </li>
-          <li class="nav-item">
-            <a href="sobre.html">About</a>
-          </li>
-        </ul>
-      </nav>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+  <script async src="./scripts/main.js"></script>
+
+  <title>Polyphia</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav container">
+      <ul class="header-list-container">
+        <li class="nav-item">
+          <a href="#tour">Tour</a>
+        </li>
+        <li class="nav-item">
+          <a href="#store">Store</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about">About</a>
+        </li>
+      </ul>
       <hr>
-      <h1 class="movie-title-large movie-title">Title</h1>
-      <!-- Adicionar imagem de fundo no CSS -->
+    </nav>
+    <a href="/">
+      <h1 class="title movie-title">Polyphia</h1>
+    </a>
 
-      <a 
-        href="https://youtu.be/wPxEYsOUJzc?si=s5feXBn60CZI1PId" 
-        target="_blank" 
-        class="watch-button-player"
-      >
-        &#9658;
-      </a>
-    </header>
+    <a href="https://youtu.be/wPxEYsOUJzc?si=s5feXBn60CZI1PId" target="_blank" class="watch-button-player">
+      &#9658;
+    </a>
+  </header>
 
-    <main class="main-section">
+  <main>
+    <div class="section" id="tour">
       <div class="container">
-        <h2 class="section-title">Datas</h2>
+        <h2 class="section-title">Tour dates</h2>
         <ul>
           <li class="schedule-item">
-            <strong class="show-date">20 Oct</strong>
-            <!-- &lt;&gt; -->
+            <strong class="show-date">13 <span class="month-one">Feb</span></strong>
             <span class="show-city">London, EN</span>
-            <!-- &lt;&gt; -->
             <span class="show-place">Stamford Bridge</span>
-            <!-- &lt;&gt; -->
             <button class="buy-ticket-button button-hover-background" type="button">Buy ticket</button>
           </li>
 
           <li class="schedule-item">
-            <strong class="show-date">21 Oct</strong>
-            <!-- &lt;&gt; -->
-            <span class="show-city">Liverpool, EN</span>
-            <!-- &lt;&gt; -->
-            <span class="show-place">Cavern Club</span>
-            <!-- &lt;&gt; -->
-            <button class="buy-ticket-button button-hover-background" type="button">Buy ticket</button>
-          </li>
-
-          <li class="schedule-item">
-            <strong class="show-date">27 Oct</strong>
-            <!-- &lt;&gt; -->
+            <strong class="show-date">27 <span class="month-one">Feb</span></strong>
             <span class="show-city">Clisson, FR</span>
-            <!-- &lt;&gt; -->
             <span class="show-place">Hellfest</span>
-            <!-- &lt;&gt; -->
             <button class="buy-ticket-button button-hover-background" type="button">Buy ticket</button>
           </li>
 
           <li class="schedule-item">
-            <strong class="show-date">03 Nov</strong>
-            <!-- &lt;&gt; -->
+            <strong class="show-date">02 <span class="month-two">Mar</span></strong>
             <span class="show-city">Wacken, AL</span>
-            <!-- &lt;&gt; -->
             <span class="show-place">Wacken Open Air</span>
-            <!-- &lt;&gt; -->
             <button class="buy-ticket-button button-hover-background" type="button">Buy ticket</button>
           </li>
 
           <li class="schedule-item">
-            <strong class="show-date">10 Nov</strong>
-            <!-- &lt;&gt; -->
+            <strong class="show-date">23 <span class="month-two">Mar</span></strong>
             <span class="show-city">Norje, SE</span>
-            <!-- &lt;&gt; -->
             <span class="show-place">Sweden Rock Festival</span>
-            <!-- &lt;&gt; -->
             <button class="buy-ticket-button button-hover-background" type="button">Buy ticket</button>
           </li>
 
           <li class="schedule-item">
-            <strong class="show-date">17 Nov</strong>
-            <!-- &lt;&gt; -->
+            <strong class="show-date">07 <span class="month-three">Apr</span></strong>
             <span class="show-city">Copenhagen, DK</span>
-            <!-- &lt;&gt; -->
             <span class="show-place">Copenhell</span>
-            <!-- &lt;&gt; -->
             <button class="buy-ticket-button button-hover-background" type="button">Buy ticket</button>
           </li>
         </ul>
       </div>
-    </main>
+    </div>
 
-    <footer class="main-footer">
-      <div class="container main-footer-container">
-        <h3 class="movie-title movie-title-medium">Title</h3>
-        <ul class="list-container">
-          <li class="footer-item">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="/images/icon-facebook.svg" alt="Facebook logo">
-            </a>
-          </li>
-          <li class="footer-item">
-            <a href="https://www.spotify.com/br" target="_blank">
-              <img src="/images/icon-spotify.svg" alt="Spotify logo">
-            </a>
-          </li>
-          <li class="footer-item">
-            <a href="https://www.youtube.com/" target="_blank">
-              <img src="/images/icon-youtube.svg" alt="Youtube logo">
-            </a>
-          </li>
-        </ul>
+    <div class="section" id="store">
+      <section class="container normal-section">
+        <h2 class="section-title">Posters</h2>
+
+        <div class="products-container">
+          <div class="movie-product">
+            <strong class="product-title">Poster 1</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="Poster 1" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$29.99</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">Poster 2</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="Poster 2" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$39.99</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">Poster 3</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="Poster 3" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$19.99</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">Poster 4</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="Poster 4" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$79.99</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+          <div class="movie-product">
+            <strong class="product-title">Poster 5</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="Poster 3" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$19.99</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">Poster 6</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="Poster 4" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$79.99</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container normal-section">
+        <h2 class="section-title">T-Shirts</h2>
+
+        <div class="products-container">
+          <div class="movie-product">
+            <strong class="product-title">T-Shirt 1</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="T-Shirt 1" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$39.90</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="movie-product">
+            <strong class="product-title">T-Shirt 2</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="T-Shirt 2" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$69.90</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+          <div class="movie-product">
+            <strong class="product-title">T-Shirt 3</strong>
+            <!-- <br> -->
+            <img src="https://placehold.co/240x144" alt="T-Shirt 2" class="product-image">
+            <div class="product-price-container">
+              <span class="product-price">$69.90</span>
+              <button type="button" class="button-hover-background">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container normal-section">
+        <h2 class="section-title">Order</h2>
+
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th class="table-head-item first-col">Item</th>
+              <th class="table-head-item second-col">Price</th>
+              <th class="table-head-item third-col">Quantity</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="3" class="cart-total-container">
+                <strong>Total</strong>
+                <span>$0.00</span>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <button type="button" class="purchase-button">Finish Order</button>
+      </section>
+    </div>
+
+    <div class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <img class="about-image" src="https://placehold.co/1024x350" alt="Foto de capa">
+        <p class="section-description">
+          Polyphia was founded in 2010 in Plano, Texas. Initially, the band’s sound leaned heavily into instrumental
+          metalcore with progressive influences. Their debut EP, "Inspire," released in 2013, captured this early style.
+          The
+          EP gained significant attention, particularly through a guitar playthrough of the song "Impassion" on YouTube,
+          which racked up over a million views and brought Polpyhia widespread recognition within the metal and
+          progressive
+          rock community.
+        </p>
+        <p class="section-description">
+          At first, Polyphia embarked on the traditional route of touring extensively, however, the band soon realized
+          that
+          touring wasn’t as fruitful for them as other promotional avenues. Instead, they shifted their focus toward
+          digital
+          marketing and YouTube content, where their intricate guitar work and innovative sound gained traction. This
+          pivot
+          proved to be essential to their early success, allowing the band to build a fanbase without the financial
+          strain
+          of touring.
+        </p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="container main-footer-container">
+      <h3 class="movie-title movie-title-medium">Polyphia</h3>
+      <ul class="list-container">
+        <li class="footer-item">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./assets/icons/icon-facebook.svg" alt="Facebook logo">
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://www.spotify.com/br" target="_blank">
+            <img src="./assets/icons/icon-spotify.svg" alt="Spotify logo">
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="./assets/icons/icon-youtube.svg" alt="Youtube logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

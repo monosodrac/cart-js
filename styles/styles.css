@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Quintessential&family=Roboto&display=swap');
 
 :root {
   --white: #fff;
@@ -15,10 +15,17 @@
 
 body, button, input, textarea {
   font: 400 16px "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 16px
 }
 
 li {
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
@@ -31,11 +38,9 @@ button {
 }
 
 
-/* sobre.html */
 /* Header */
 .main-header {
   background-color: #000;
-  background-position: 50% 39%;
 
   display: flex;
   flex-direction: column;
@@ -47,6 +52,9 @@ button {
 }
 
 .header-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding: 16px 0;
 }
 
@@ -61,23 +69,18 @@ button {
 }
 
 hr {
-  width: 100%;
+  width: 1024px;
 }
 
-.movie-title-large {
-  font-size: 54px;
+.title {
+  margin: 2rem 0;
+  font-size: 4rem;
 }
 
 
 /* Main */
-.main-section {
-  padding: 40px 0 64px;
-}
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 0 16px
+.section {
+  padding: 2rem 0;
 }
 
 .section-title {
@@ -88,12 +91,8 @@ hr {
   margin-bottom: 24px;
 }
 
-.about-movie-image {
-  float: left;
-  border-radius: 8%;
-  margin: 0 20px 10px 0;
-  width: 200px;
-  height: auto;
+.about-image {
+  margin: 1rem 0;
 }
 
 .section-description {
@@ -103,44 +102,6 @@ hr {
 .section-description + .section-description {
   margin-top: 16px;
 }
-
-
-/*  Footer  */
-.main-footer {
-  background: var(--dark);
-  padding: 16px 0;
-}
-
-.main-footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.movie-title-medium {
-  font-size: 26px;
-}
-
-.movie-title {
-  font-family: "Rock Salt", cursive;
-  color: var(--white);
-}
-
-.list-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-item + .footer-item {
-  margin-left: 16px;
-}
-
-.footer-item img {
-  width: 32px;
-  height: 32px;
-}
-
 
 /* index.html */
 
@@ -191,10 +152,7 @@ hr {
 }
 
 
-
-/* loja.html */
-
-/* Main */
+/* loja */
 .normal-section + .normal-section {
   margin-top: 80px;
 }
@@ -202,8 +160,8 @@ hr {
 .products-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .movie-product {
@@ -221,7 +179,7 @@ hr {
 }
 
 .product-image {
-  width: 240px; /* Flex wrap coloca 2 posters por linha, pq a seção tem 600px */
+  width: 240px;
   height: 144px;
 }
 
@@ -255,7 +213,7 @@ hr {
   color: var(--dark);
 }
 
-/* tabela carrinho de compras */
+/* cart table */
 .cart-table {
   width: 100%;
   border-collapse: collapse;
@@ -351,8 +309,44 @@ hr {
 }
 
 
+/* Footer */
+.main-footer {
+  background: var(--dark);
+  padding: 16px 0;
+}
 
-/* Responsividade */
+.main-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-title-medium {
+  font-size: 26px;
+}
+
+.movie-title {
+  font-family: "Quintessential", serif;
+  color: var(--white);
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-item + .footer-item {
+  margin-left: 16px;
+}
+
+.footer-item img {
+  width: 32px;
+  height: 32px;
+}
+
+
+/* Responsivity */
 @media (max-width: 584px) {
   .movie-title-large {
     font-size: 36px;

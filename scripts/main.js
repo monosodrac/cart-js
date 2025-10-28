@@ -4,7 +4,7 @@ if (document.readyState == 'loading') {
     ready();
 };
 
-var totalAmount = '0.00';
+let totalAmount = '0.00';
 
 function ready() {
     const removeProductButtons = document.getElementsByClassName('remove-product-button');
@@ -24,6 +24,8 @@ function ready() {
     
     const purchaseButton = document.getElementsByClassName('purchase-button')[0];
     purchaseButton.addEventListener('click', makePurchase);
+
+    // monthOne = 
 };
 
 function removeProduct(e) {

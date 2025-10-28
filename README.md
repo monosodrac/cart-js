@@ -16,7 +16,6 @@
   - [Cloning](#cloning)
 - [📍 Application Routes](#pages)
 - [🤝 How to reach me](#reach)
-- [📌 Obs](#obs)
   
 </details>
 
@@ -59,7 +58,3 @@ git clone https://github.com/monosodrac/carrinho_js.git
     </td>
   </tr>
 </table>
-
-<h2 id="obs">📌 Obs</h2>
-
-This project was developed based on the video from the channel [Senhor Programador](https://youtu.be/wARWyPzNA9o?si=ZN4vUWiMjI0zHr2i).
